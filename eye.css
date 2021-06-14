@@ -1,0 +1,40 @@
+body{
+overflow-y: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+ #container
+{  
+    display: flex; 
+   width: 500px;
+   height: 500px;
+   background-color: rgba(34,34, 179, 0.616) ;
+    border-radius: 50%;
+   align-items: center;
+   justify-content: center;
+}
+#container .eye
+{background-color: white;
+    width: 140px;
+    height: 140px;
+    margin: 0 20px;
+   display: block;
+   position: relative;
+border-radius:50% ;
+
+}
+.eye::before
+{content: ' ';
+    position: absolute;
+    background: black;
+   width: 50px;
+   height: 50px;
+   transform: translate(50%,-50%);
+   top: 50%;
+   border-radius:50%;
+   box-sizing: border-box;
+
+
+
+}
